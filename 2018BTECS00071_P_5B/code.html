@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Find Number of Digits</title>
+</head>
+<body>
+    <header>
+        <h2> Write a code in any programming language that counts the 
+            digits in a number</h2>
+    </header>
+    <h2>Code for given problem</h2>
+    <h3><code>Sample Input</code></h3>
+    <strong><code>675849</strong>
+    <h3 >Sample Output</h3>
+    <strong><code>6</strong>
+    <strong>
+        <hr>
+        <code >
+            <h3 >Code</h3>
+            <p>
+            <pre>
+            // Iterative C++ program to count 
+            // number of digits in a number 
+            #include <iostream.h> 
+            using namespace std; 
+            
+            int countDigit(long long n) 
+            { 
+                int count = 0; 
+                while (n != 0) { 
+                    n = n / 10; 
+                    ++count; 
+                } 
+                return count; 
+            } 
+            
+            // Driver code 
+            int main(void) 
+            { 
+                long long n = 675849; 
+                cout << "Number of digits : "
+                    << countDigit(n); 
+                return 0; 
+            } 
+        </pre>
+        </p>
+        </code>
+    </strong>
+    <h3>Output</h3>
+    <strong> <p> 6 <br> Code Run Successfully... <kbd>Press any key</kbd> </p> </strong>
+    <h3> Complexity </h3>
+    <strong> <p> O(n) </p> </strong>
+    <hr>
+    <footer>
+    <a href="https://www.geeksforgeeks.org/program-count-digits-integer-3-different-methods/">Reference</a>
+    </footer>
+</body>
